@@ -1,0 +1,95 @@
+* {
+  font-size: 62.5%;
+  font-family: "Roboto" sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 288px;
+}
+main .info .info-title {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+main .info .info-subtitle {
+  font-size: 2rem;
+}
+main .info button {
+  font-size: 1.8rem;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: darkorange;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+main .hero-image {
+  width: 100%;
+  min-width: 288px;
+  height: 100%;
+  margin-top: 30px;
+  background-size: cover;
+}
+
+.dishes {
+  margin: 50px 0;
+}
+.dishes .dishes-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.dishes .dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+.dishes .dishes-grid .dishes-item {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dishes .dishes-grid .dishes-item__big {
+  grid-area: 1/1/3/3;
+}
+
+.menu {
+  margin-bottom: 150px;
+}
+.menu .menu-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.menu .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  justify-content: center;
+  gap: 25px;
+}
+.menu .menu-grid .menu-grid-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: darksalmon;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}/*# sourceMappingURL=style.css.map */
